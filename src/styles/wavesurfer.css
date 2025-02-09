@@ -1,0 +1,8 @@
+#wavesurfer-wrap {
+  position: relative;
+  height: 100%;
+}
+
+#wavesurfer-wrap ::part(wrapper) {
+  background-color: #000000;
+}

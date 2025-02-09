@@ -1,0 +1,13 @@
+#wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.button-group {
+  height: 50px;
+}
+
+.ws-view {
+  flex: 1;
+}

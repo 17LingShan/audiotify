@@ -505,6 +505,11 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.14.0"
 
+"@wavesurfer/react@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.npmmirror.com/@wavesurfer/react/-/react-1.0.9.tgz#7ee038d48ba22293858dd575b38c6db153c886f7"
+  integrity sha512-HD3x+p48kWITd3tCOA7KG+6zae8btulNjSTdnRmgrtp9/XPzXc61ZCaPgbqT0gioPGhIcvBcpXZAmnhE8lUDBw==
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.npmmirror.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
@@ -741,24 +746,24 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-mobx-react-lite@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.npmmirror.com/mobx-react-lite/-/mobx-react-lite-4.0.7.tgz#f4e21e18d05c811010dcb1d3007e797924c4d90b"
-  integrity sha512-RjwdseshK9Mg8On5tyJZHtGD+J78ZnCnRaxeQDSiciKVQDUbfZcXhmld0VMxAwvcTnPEHZySGGewm467Fcpreg==
+mobx-react-lite@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/mobx-react-lite/-/mobx-react-lite-4.1.0.tgz#6a03ed2d94150848213cfebd7d172e123528a972"
+  integrity sha512-QEP10dpHHBeQNv1pks3WnHRCem2Zp636lq54M2nKO2Sarr13pL4u6diQXf65yzXUn0mkk18SyIDCm9UOJYTi1w==
   dependencies:
-    use-sync-external-store "^1.2.0"
+    use-sync-external-store "^1.4.0"
 
-mobx-react@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.npmmirror.com/mobx-react/-/mobx-react-9.1.1.tgz#b96e0d5d74a3d02fc62729fd344b2a3ad2a88aae"
-  integrity sha512-gVV7AdSrAAxqXOJ2bAbGa5TkPqvITSzaPiiEkzpW4rRsMhSec7C2NBCJYILADHKp2tzOAIETGRsIY0UaCV5aEw==
+mobx-react@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.npmmirror.com/mobx-react/-/mobx-react-9.2.0.tgz#c1e4d1ed406f6664d9de0787c948bac3a7ed5893"
+  integrity sha512-dkGWCx+S0/1mfiuFfHRH8D9cplmwhxOV5CkXMp38u6rQGG2Pv3FWYztS0M7ncR6TyPRQKaTG/pnitInoYE9Vrw==
   dependencies:
-    mobx-react-lite "^4.0.7"
+    mobx-react-lite "^4.1.0"
 
-mobx@^6.12.3:
-  version "6.12.3"
-  resolved "https://registry.npmmirror.com/mobx/-/mobx-6.12.3.tgz#b6a0fde4268116be602d50bffb32f1b90a8fb077"
-  integrity sha512-c8NKkO4R2lShkSXZ2Ongj1ycjugjzFFo/UswHBnS62y07DMcTc9Rvo03/3nRyszIvwPNljlkd4S828zIBv/piw==
+mobx@^6.13.6:
+  version "6.13.6"
+  resolved "https://registry.npmmirror.com/mobx/-/mobx-6.13.6.tgz#3b80895c7c9df456efc86ae0b6983ccea1da6cc6"
+  integrity sha512-r19KNV0uBN4b+ER8Z0gA4y+MzDYIQ2SvOmn3fUrqPnWXdQfakd9yfbPBDBF/p5I+bd3N5Rk1fHONIvMay+bJGA==
 
 ms@2.1.2:
   version "2.1.2"
@@ -909,10 +914,10 @@ update-browserslist-db@^1.0.13:
     escalade "^3.1.2"
     picocolors "^1.0.0"
 
-use-sync-external-store@^1.2.0:
-  version "1.2.2"
-  resolved "https://registry.npmmirror.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
-  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
+use-sync-external-store@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/use-sync-external-store/-/use-sync-external-store-1.4.0.tgz#adbc795d8eeb47029963016cefdf89dc799fcebc"
+  integrity sha512-9WXSPC5fMv61vaupRkCKCxsPxBocVnwakBEkMIHHpkTTg6icbJtg6jzgtLDm4bl3cSHAca52rYWih0k4K3PfHw==
 
 vite@^5.2.11:
   version "5.2.11"
@@ -924,6 +929,11 @@ vite@^5.2.11:
     rollup "^4.13.0"
   optionalDependencies:
     fsevents "~2.3.3"
+
+wavesurfer.js@^7.9.0:
+  version "7.9.0"
+  resolved "https://registry.npmmirror.com/wavesurfer.js/-/wavesurfer.js-7.9.0.tgz#03a8ab15c46464521cfcbfc4d6d90d3608f0ac7a"
+  integrity sha512-ZzyHn+htSsZ0omPSYaAbhnoMqlLVO1lR8b+hACMBEvpZmkScJn0AmQkBo2a5u5UtOuCVc0Xv/tM+KtJVv5yvtQ==
 
 yallist@^3.0.2:
   version "3.1.1"
