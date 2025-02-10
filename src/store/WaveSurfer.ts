@@ -16,6 +16,8 @@ class WaveSurferStoreClass {
 
   constructor() {
     makeAutoObservable(this);
+    // 在window中执行resize方法时, this指向window
+    this.resize = this.resize.bind(this);
   }
 
   initialize(container: HTMLElement) {
@@ -27,7 +29,6 @@ class WaveSurferStoreClass {
       timeInterval: 1,
       primaryLabelInterval: 5,
       style: {
-        position: "absolute",
         fontSize: "10px",
         color: "#767c7c",
         backgroundColor: "#111111",
@@ -38,13 +39,16 @@ class WaveSurferStoreClass {
 
     this.WaveSurfer = WaveSurfer.create({
       container: container,
-      height: "auto",
+      fillParent: true,
+      height: (window.innerHeight - 160) * 0.5, // 每条波形的高度
       waveColor: "#99c2c6",
-      barHeight: 0.9,
+      cursorColor: "#ff8c35",
+      sampleRate: 44100,
       progressColor: "#6e7e80",
+      barHeight: 0.9,
+      hideScrollbar: true,
       url: this.audioUrl,
       splitChannels: [{}, {}],
-      minPxPerSec: 100,
       plugins: [topTimeline, zoom],
     });
 
@@ -64,14 +68,21 @@ class WaveSurferStoreClass {
     this.WaveSurfer.on("timeupdate", (currentTime) => {
       this.setCurrentTime(currentTime);
     });
+
+    window.addEventListener("resize", this.resize);
+  }
+
+  resize() {
+    console.log("resize");
+    this.WaveSurfer?.setOptions({
+      height: (window.innerHeight - 160) * 0.5,
+    });
   }
 
   destroy() {
-    if (this.WaveSurfer) {
-      this.container = null;
-      this.WaveSurfer.destroy();
-      this.WaveSurfer = null;
-    }
+    window.removeEventListener("resize", this.resize);
+    this.WaveSurfer?.destroy();
+    this.WaveSurfer = null;
   }
 
   play() {

@@ -1,11 +1,12 @@
 import { observer } from "mobx-react";
 import { formatTime } from "@/utils/common";
 import WaveSurferStore from "@/store/WaveSurfer";
+import "./styles/OptionButtonsGroup.css";
 
 function OptionButtonsGroup() {
   return (
     <>
-      <div style={{ height: "100%" }}>
+      <div id="option-buttons-group-wrap" style={{ height: "100%" }}>
         <button onClick={() => WaveSurferStore.loadLocalFile()}>
           load local file
         </button>
